@@ -1,0 +1,22 @@
+//base
+.logo {    
+    width: 96px;
+    height: 31px;   
+}
+
+
+img {
+	width: 100%;
+	height: auto;
+	vertical-align: middle; 	/* 免除img 神秘空間間隙 */
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+  }
+  
+
+  a{
+    text-decoration: none;
+  }
+
