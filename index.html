@@ -1,10 +1,81 @@
----
-title: Yoga Index
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yoga Index</title>
+    <!-- google icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+       <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+      <!-- Link aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <header class="header bg-light position-fixed top-0 start-0 end-0 z-index-30">
+      <div class="container d-lg-flex justify-content-between align-items-center pt-14 pt-lg-8 pb-0 pb-md-2 pb-lg-7">
+       <a class="d-none d-lg-block"><img class="logo" src="./assets/images/DOYOGA-logo.png" alt="yoga logo"></a>
+       <ul class="list-unstyled d-none d-lg-flex justify-content-center align-items-center mb-0">
+         <li class="fs-6 pe-10"><a href="#" class="text-dark">課程介紹</a></li>
+         <li class="fs-6 pe-10"><a href="#" class="text-dark">瑜珈空間</a></li>
+         <li class="fs-6"><a href="#" class="text-dark">當月課表</a></li>
+       </ul>
+       <div class="d-none d-lg-inline nav-btn">
+         <a href="#" class="btn btn-outline-secondary rounded-pill fs-6 px-6 py-2 me-6" role="button">立即預約</a>
+         <a href="#" class="btn btn-outline-secondary rounded-pill fs-6 px-6 py-2" role="button">聯絡我們</a>
+         </div> 
+ 
+        <div class="menu d-block d-lg-none">  
+ 
+         <!--Navbar-->
+       
+         <nav class="navbar navbar-light bg-light position-fixed top-0 start-0 end-0 z-index-30">
+           <div class="container-fluid">
+             <a class="d-block d-lg-none"><img class="logo" src="./assets/images/DOYOGA-logo.png" alt="yoga logo"></a>
+             <button class="navbar-toggler redius-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+           </div>
+         </nav>
+         <div class="collapse " id="navbarToggleExternalContent">         
+           <div class="bg-light p-4">
+           <ul class="list-unstyled">
+             <li class="fs-5 mb-10 fs-lg-6 pe-lg-10"><a class="text-dark" href="#">課程介紹</a></li>
+             <li class="fs-5 mb-10 fs-lg-6 pe-lg-10"><a class="text-dark" href="#">瑜珈空間</a></li>
+             <li class="fs-5 mb-10 fs-lg-6 pe-lg-10"><a class="text-dark" href="#">當月課表</a></li>
+           </ul>
+           <div class="nav-btn">
+           <a href="#" class="btn btn-outline-secondary rounded-pill fs-6 px-6 py-2 me-6" role="button">立即預約</a>
+           <a href="#" class="btn btn-outline-secondary rounded-pill fs-6 px-6 py-2" role="button">聯絡我們</a>
+           </div>           
+           </div>
+         </div>
+        </div>
+      </div>   
+
+      <ul class="list-unstyled d-none d-lg-block mb-0 me-6 position-fixed top-50 end-0 translate-middle-y z-index-99">
+        <li class="mb-3">
+          <a href="#" class="d-block"><i class="fab fa-facebook fs-0 link-secondary" aria-hidden="true"></i></a>
+        </li>
+        <li class="mb-3">
+          <a href="#" class="d-block"><i class="fab fa-instagram fs-0 link-secondary" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="#" class="d-block"><i class="fab fa-line fs-0 link-secondary" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+ 
+    </header>
+    
+
+    
 <!-- hero section -->
 <section class="hero position-relative">
   <div class="card heroBackgroundImg border-0 rounded-0 hv-md-100">
@@ -452,3 +523,73 @@ current: index
 
 
  </section>
+
+
+    <section class="subscribe bg-secondary">
+      <div class="container">
+        <div class="row d-lg-flex justify-content-lg-between align-items-lg-center pt-lg-10 pb-lg-10 pt-8">
+       <h4 class="col-12 col-lg-5 text-white mb-2">現在訂閱，獲得課程優惠碼！</h4>
+       <div class="col-12 col-lg-4">
+         <div class="row">
+          <div class="col-12 input-group mb-0 pb-8">
+            <input type="text" class="form-control fs-5" placeholder="輸入您的電子信箱" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-primary text-white fs-5" type="button" id="button-addon2">訂閱</button>
+          </div>
+         </div>
+
+       </div>
+      
+    </div>     
+      </div>
+    </section>
+
+    <hr class="text-white m-auto">
+
+    <footer class="footer bg-secondary pb-10">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center pt-10 mb-2">
+          <a class=""><img class="logo" src="./assets/images/DOYOGA.png" alt="yoga logo"></a>
+          <ul class="d-flex justify-content-center align-items-center list-unstyled">
+            <li ><a class="text-white d-block pe-2" href="#"><i class="fab fa-facebook fs-4" aria-hidden="true"></i></a></li>          
+            <li ><a class="text-white d-block pe-2" href="#"><i class="fab fa-instagram fs-4" aria-hidden="true"></i></a></li>  
+            <li ><a class="text-white d-block pe-2" href="#"><i class="fab fa-line fs-4" aria-hidden="true"></i></a></li>  
+          </ul>
+        </div>
+        <div class="row d-md-flex flex-md-wrap align-items-md-end ">
+          <ul class="list-unstyled col-md-4 col-lg-5">
+            <li><a class="link-white mb-2" href="#">課程介紹</a></li>
+            <li><a class="link-white mb-2" href="#">瑜珈空間</a></li>
+            <li><a class="link-white pb-10" href="#">當月課表</a></li>
+          </ul>
+          <p class="col-md-8 col-lg-7 text-white fs-6">© 2021. All Rights Reserved.</p>
+        </div>  
+       
+      </div>
+      
+    </footer>
+
+     <!-- Swiper JS -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    spaceBetween: -150,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+ AOS.init();
+</script>
+    
+
+  
+  </body>
+
+</html>
