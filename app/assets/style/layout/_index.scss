@@ -1,7 +1,7 @@
 // home area
 
 .heroBackgroundImg {
-  background-image: url('/app/assets/images/banner.jpeg');
+  background-image: url('../images/banner.jpeg');
   background-position:bottom;
   background-size:cover;
   height:100vh;
@@ -25,7 +25,7 @@
   object-fit: cover;
 }
 .feature-img1{
-  background-image: url('/app/assets/images/feature1.jpeg');
+  background-image: url('../images/feature1.jpeg');
   background-position:center;
   background-size:cover;
   height:420px;
@@ -33,7 +33,7 @@
 
 }
 .feature-img1-md{
-  background-image: url('/app/assets/images/feature1.jpeg');
+  background-image: url('../images/feature1.jpeg');
   background-position:center;
   background-size:cover;
   height:252px;
@@ -41,7 +41,7 @@
 }
 
 .feature-img2{
-  background-image: url('/app/assets/images/feature2.jpeg');
+  background-image: url('../images/feature2.jpeg');
   background-position:center;
   background-size:cover;
   height:420px;
@@ -50,14 +50,14 @@
 }
 
 .feature-img2-md{
-  background-image: url('/app/assets/images/feature2.jpeg');
+  background-image: url('../images/feature2.jpeg');
   background-position:center;
   background-size:cover;
   height:252px;
 
 }
 .feature-img3{
-  background-image: url('/app/assets/images/feature3.jpeg');
+  background-image: url('../images/feature3.jpeg');
   background-position:center;
   background-size:cover;
   height:420px;
@@ -65,7 +65,7 @@
 
 }
 .feature-img3-md{
-  background-image: url('/app/assets/images/feature3.jpeg');
+  background-image: url('../images/feature3.jpeg');
   background-position:center;
   background-size:cover;
   height:252px;
@@ -73,14 +73,14 @@
 }
 
 .space-img1{
-  background-image: url('/app/assets/images/space2.jpg');
+  background-image: url('../images/space2.jpg');
   background-position:center;
   background-size:cover;
   height:207px;
 }
 
 .opt-img1{
-  background-image: url('/app/assets/images/course1.jpg');
+  background-image: url('../images/course1.jpg');
   background-position:0% 50%;
   background-size:cover;
   height:237px;
